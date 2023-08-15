@@ -1,0 +1,16 @@
+.bloco{
+    border: 15px solid rgba(109, 42, 25, 0.7);
+    border-radius: 15px;
+    background-color: rgba(230, 230, 230, 0.7);
+    padding: 15px 15px 15px 15px;
+    margin: 5% 65% 0% 15%;
+    box-shadow: 4px 4px 10px 2px gray inset;
+    text-align: center;
+}
+
+body{
+    background-color: lightblue;
+    background-image: url(roma.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+}
