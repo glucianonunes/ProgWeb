@@ -1,0 +1,7 @@
+.tabuada{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-flow: row wrap;
+    gap: 10px;
+}
