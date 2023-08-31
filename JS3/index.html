@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Computação</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <form onsubmit="clearInput()"></form>
+            <label for="conjunto1"><input type="text" id="conjunto1" class="input">Conjunto 1</label> 
+            <button id="inserir1" type="submit">Inserir no conjunto 1</button>
+            <button id="excluir1" type="submit">Excluir do conjunto 1</button>
+            
+            <br>
+
+            <label for="conjunto2"><input type="text" id="conjunto2" class="input">Conjunto 2</label>
+            <button id="inserir2" type="submit">Inserir no conjunto 2</button>
+            <button id="excluir2" type="submit">Excluir do conjunto 2</button>
+
+            <br><br>
+
+            <button id="diferenca" type="submit">Diferença</button>
+            <button id="uniao" type="submit">União</button>
+            <button id="intersecao" type="submit">Interseção</button>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <p id="p1">Conjunto 1: </p>
+        <p id="p2">Conjunto 2: </p>
+    </div>
+</body>
+</html>
