@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Instituto de Computação</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <style>
+        input{
+            width: 40px
+        }
+    </style>
+
+    <h1>Um Gráfico de Barras</h1>
+    <form onsubmit="clearInput()"></form>
+            <label for="conjunto1">Informe a altura das barras
+                <input type="text" id="bar1" class="input">
+                <input type="text" id="bar2" class="input">
+                <input type="text" id="bar3" class="input">
+                <input type="text" id="bar4" class="input">
+                <input type="text" id="bar5" class="input"></label> 
+            
+
+            <br>  
+            <label for="conjunto1">Informe a largura das barras
+                <input type="text" id="larg" class="input"></label>
+            
+            <br>
+            <button id="botao" type="submit">Desenhar o gráfico</button>
+    </form>
+    <div id="pai">
+        <div id="b1"></div>
+        <div id="b2"></div>
+        <div id="b3"></div>
+        <div id="b4"></div>
+        <div id="b5"></div>
+    </div>
+    
+</body>
+</html>
