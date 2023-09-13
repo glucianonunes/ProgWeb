@@ -1,0 +1,4 @@
+Na linguagem Javascript, qual é a diferença entre == e === ?
+
+R = ambas são operações de comparação de igualdade. A diferença é que == compara apenas os valores,
+enquanto === compara tanto os valores quanto o tipo.
