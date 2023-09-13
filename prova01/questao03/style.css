@@ -1,0 +1,10 @@
+
+#botao{
+    border: 5px solid black;
+    background-color: lightgray;
+    padding: 20px;
+    width: 150px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
