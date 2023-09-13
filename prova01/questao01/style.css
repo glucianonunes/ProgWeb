@@ -1,0 +1,30 @@
+div{
+    display: flex;
+}
+
+#externo {
+    border: 5px solid black;
+    width: 600px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#c1 {
+    border: 5px solid green;
+    background-color: red;
+    font-size: 32px;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#c2 {
+    border: 5px solid yellow;
+    background-color: blue;
+    font-size: 32px;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
