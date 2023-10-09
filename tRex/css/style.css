@@ -1,0 +1,94 @@
+.deserto{
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.chao{
+    background-image: url('../img/sprite.png');
+    position: absolute;
+    bottom: 0px;
+    background-position-y: -78px;
+    width: 1831px;
+    height: 20px;
+    z-index: 2;
+}
+
+.dino{
+    background-image: url('../img/sprite.png');
+    position: absolute;
+    left: 20px;
+    width: 66px;
+    height: 70px;
+    z-index: 4;
+}
+
+.score{
+    position: absolute;
+    left: 900px;
+    top: 30px;
+    width: 200px;
+    height: 30px;
+    z-index: 5;
+}
+
+.ptero{
+    background-image: url('../img/sprite.png');
+    background-position-y: -12px;
+    position: absolute;
+    width: 69px;
+    height: 49px;
+    z-index: 3;
+}
+
+
+.cactoPequeno{
+    background-image: url('../img/sprite.png');
+    background-position-y: -2px;
+    height: 54px;
+    position: absolute;
+    z-index: 5;
+}
+
+.cactoGrande{
+    background-image: url('../img/sprite.png');
+    background-position-y: -2px;
+    height: 74px;
+    position: absolute;
+}
+
+
+.gameOver{
+    background-image: url('../img/sprite.png');
+    background-position-x: -972px;
+    background-position-y: -22px;
+    position: absolute;
+    width: 285px;
+    height: 16px;
+    left: 400px;
+    top: 140px;
+    z-index: 4;
+}
+
+.restart{
+    background-image: url('../img/sprite.png');
+    background-position-x: -2px;
+    background-position-y: -2px;
+    position: absolute;
+    width: 53px;
+    height: 47px;
+    left: 512px;
+    top: 175px;
+    z-index: 4;
+}
+
+
+.nuvem{
+    background-image: url('../img/sprite.png');
+    background-position: -125px -2px;
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    z-index: 2;
+}
