@@ -1,27 +1,30 @@
-class empregado{
-    constructor(nome, salario){
+/* Código desenvolvido corretamente */
+/* Nota: 2.0 */
+
+class empregado {
+    constructor(nome, salario) {
         this.nome = nome
         this.salario = salario
     }
 
-    getSalario(){
+    getSalario() {
         return this.salario
     }
 
-    setSalario(salario){
-        if(salario < 0){
+    setSalario(salario) {
+        if (salario < 0) {
             console.log("ERRO. Número negativo inserido. Salário não poôde ser atualizado.")
         }
-        else{
+        else {
             this.salario = salario
         }
     }
 
-    static somaSalarios(empregados){
+    static somaSalarios(empregados) {
         let tamanho = empregados.length
         let soma = 0.00
-        for(let i = 0; i < tamanho; i++){
-            soma = soma +  empregados[i].getSalario()
+        for (let i = 0; i < tamanho; i++) {
+            soma = soma + empregados[i].getSalario()
         }
         return soma;
     }
