@@ -8,10 +8,13 @@ const app = express();
 const PORT = 3456;
 
 app.engine("handlebars", handlebars.engine({
-  helpers: require(`${__dirname}/views/helpers/helpers.js`)
+  helpers: require(`${__dirname}/views/helpers/helpers.js`),
+  layoutsDir: `${__dirname}/views/layouts`,
+  defaultLayout: 'main'
 }));
+
+
 app.set("view engine", "handlebars");
-//  app.use(express.static(`public/img`));
 app.set("views", `${__dirname}/views`);
 
 
@@ -25,6 +28,12 @@ prefix: "/css",
 app.use("/css", express.static(`${__dirname}/../public/css`));
 app.use('/img', express.static(`${__dirname}/../public/img`));
 app.use('/webfonts', express.static(`${__dirname}/../node_modules/@fortawesome/fontawesome-free/webfonts`))
+app.use("/js", [
+  express.static(`${__dirname}/../public/js`),
+  express.static(`${__dirname}/../node_modules/bootstrap/dist/js/`),
+  express.static(`${__dirname}/../node_modules/@popperjs/core/dist/umd/`)
+
+]);
 
 app.use(router)
 

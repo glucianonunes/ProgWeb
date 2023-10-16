@@ -6,6 +6,18 @@ const index = (req, res) => {
     });
 };
 
+const profs = (req, res) =>{
+    const professores =[
+        {nome: "David Fernandes", sala: 1238},
+        {nome: "Horácio Fernandes", sala: 1333},
+        {nome: "Tayana Conte", sala: 1234},
+        {nome: "Leandro Galvão", sala: 1111}
+    ]
+    res.render('main/profs', {
+        professores
+    })
+}
+
 const sobre = (req, res) => {
     const conteudo = 'Página sobre a aplicação';
     res.render('main/sobre', {
@@ -13,4 +25,10 @@ const sobre = (req, res) => {
     });
 };
 
-module.exports = { index, sobre }
+const ui = (req, res) =>{
+    res.render("main/ui", {
+
+    })
+}
+
+module.exports = { index, sobre, profs, ui }
