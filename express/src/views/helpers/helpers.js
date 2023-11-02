@@ -5,4 +5,14 @@ const toLower = function(value) {
 const toUpper = function(value) {
     return value.toUpperCase();
 }
-    module.exports = { toLower, toUpper };
+
+function checked(currentValue, value){
+    if(currentValue === value){
+        return"checked";
+    }
+    else{
+        return "";
+    }
+}
+
+    module.exports = { toLower, toUpper, checked };

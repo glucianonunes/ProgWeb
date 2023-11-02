@@ -25,10 +25,21 @@ const sobre = (req, res) => {
     });
 };
 
+const game = (req, res) => {
+    const conteudo = 'Página para jogar o jogo';
+    res.render('main/game', {
+        conteudo,
+    });
+};
+
 const ui = (req, res) =>{
     res.render("main/ui", {
 
     })
 }
 
-module.exports = { index, sobre, profs, ui }
+const area  = (req, res) =>{
+    res.render("main/area");
+}
+
+module.exports = { index, sobre, profs, game, ui, area}
